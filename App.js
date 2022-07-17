@@ -4,7 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import DailyPic from "./screens/DailyPic";
-import Spacecraft from "./screens/Spacecraft";
+import Spacecrafts from "./screens/Spacecrafts";
 import StarMap from "./screens/StarMap";
 import HomeScreen from "./screens/HomeScreen";
 
@@ -26,7 +26,7 @@ export default function App() {
                 ></Stack.Screen>
                 <Stack.Screen
                     name="Spacecrafts"
-                    component={Spacecraft}
+                    component={Spacecrafts}
                 ></Stack.Screen>
                 <Stack.Screen
                     name="Star Map"
@@ -36,12 +36,3 @@ export default function App() {
         </NavigationContainer>
     );
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: "#fff",
-        alignItems: "center",
-        justifyContent: "center",
-    },
-});
