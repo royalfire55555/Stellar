@@ -1,20 +1,18 @@
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import React, { Component } from "react";
+import { Text, View } from "react-native";
 
-export default class StarMap extends React.Component {
+export default class SpaceCraftScreen extends Component {
     render() {
         return (
-            <View style={styles.container}>
-                <Text>Spacecrafts screen</Text>
+            <View
+                style={{
+                    flex: 1,
+                    justifyContent: "center",
+                    alignItems: "center",
+                }}
+            >
+                <Text>SpaceCraft Screen!</Text>
             </View>
         );
     }
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: "center",
-        justifyContent: "center",
-    },
-});
